@@ -1,0 +1,57 @@
+body{
+    background-color: #619c08;
+    font: normal 15pt Arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.589) ;
+
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+
+    width: 400px;
+    height: 400px;
+}
+
+div {
+    text-align: left;
+    padding: 5px;
+}
+
+footer{
+    color: white;
+    font-style: italic;
+
+    text-align: center;
+
+}
+
+div p {
+    text-align: left;
+    font-size: 15px;
+}
+
+div input#fim{
+    margin-left: 15px;
+}
+div input#inicio{
+    margin-left: 5px;
+}
+
+div input {
+    
+    width: 200px;
+   height: 20px;
+}
+
+div input#btnContar{
+    height: 30px;
+    width: 150px;
+    border-radius: 25px;
+}

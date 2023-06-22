@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relogio</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     
     <section>
-        <div id="msg">
-            aqui vai aparecer a mansagem...
+        <div>
+          <p>Número : <input type="number" id="txtnumber" placeholder="digite um número"></p>
+          <input type="button" value="Gerar Tabuada" onclick="tabuada()">
         </div>
 
-        <div id="foto">
-            <img src="#" alt="foto-do-dia" width="300px" height="300px" id="imagem">
+        <div id="resultado">
+            <select name="tabuada" id="seltab" size="10">
+
+
+
+            </select>
         </div>
     </section>
 
