@@ -22,9 +22,12 @@ section{
 div {
     text-align: left;
     padding: 3px;
-}
-div  {
     font-size: 15px;
+}
+div p{
+    color: red;
+
+
 }
  div input#txtnum{
     width: 120px;
@@ -41,5 +44,6 @@ footer{
     font-style: italic;
 
     text-align: center;
-
 }
+
+

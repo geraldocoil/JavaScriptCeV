@@ -41,11 +41,13 @@ function adicionar(){
         let numero = Number(txtnumero.value); //Converter o valor do input -> para Int
         //Adicionar o número no array
         valores.push(numero);//Adiciona o numero na ultima posição do array
+        //ou valores.push(Number(txtnumero.value));
+
 
         //Adicionar um <option> com o número adicionado
-        var opcao = document.createElement('option');
-        opcao.innerHTML =  `${numero}`;
-        tabela.appendChild(opcao);
+        var item = document.createElement('option');
+        item.text =  `${numero}`;
+        tabela.appendChild(item);
 
         //Contagem do total de números adicionados
         numTotal++;//Sempre q um número for adicionado, incrementa +1 a variavel numTotal
@@ -58,6 +60,9 @@ function adicionar(){
     }else{
         window.alert('Valor digitado é inválido ou já está está na tabela!!!');
     }
+    txtnumero.value = '';//Apaga o número adicionado do input
+    txtnumero.focus();//deixa o input selecionado
+
 
 }
 
@@ -81,12 +86,13 @@ function finalizar(){
         }
     }
 
-    //[1,2,3] -> numTotal = 3; maior = 3; menor = 1; total = 6; media = 6/3 = 2
-    msg.innerHTML += `No total foram adicionados ${numTotal} números a tabela <br>`;
-    msg.innerHTML += `O maior valor digitado foi ${maior} <br>`;
-    msg.innerHTML += `O menor valor digitado foi ${menor} <br>`;
-    msg.innerHTML += `A soma total de todos os números digitados, é igual a ${total} <br>`;
-    msg.innerHTML += `A média entre todos os números digitados é igual a ${media} <br>`;
+    msg.innerHTML = '';
+
+    msg.innerHTML += `<p> No total foram adicionados ${numTotal} números a tabela </p>`;
+    msg.innerHTML += `<p> O maior valor digitado foi ${maior} </p>`;
+    msg.innerHTML += `<p> O menor valor digitado foi ${menor} </p>`;
+    msg.innerHTML += `<p> A soma total de todos os números digitados, é igual a ${total} </p>`;
+    msg.innerHTML += `<p> A média entre todos os números digitados é igual a ${media} </p>`;
 
 
 }
